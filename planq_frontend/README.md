@@ -45,42 +45,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-```
-planq_frontend
-├─ .gitignore
-├─ eslint.config.mjs
-├─ package-lock.json
-├─ package.json
-├─ public
-│  ├─ favicon.ico
-│  ├─ index.html
-│  ├─ logo192.png
-│  ├─ logo512.png
-│  ├─ manifest.json
-│  └─ robots.txt
-├─ README.md
-├─ src
-│  ├─ api
-│  ├─ App.css
-│  ├─ App.test.tsx
-│  ├─ App.tsx
-│  ├─ assetss
-│  ├─ components
-│  │  └─ Loading.tsx
-│  ├─ index.css
-│  ├─ index.tsx
-│  ├─ logo.svg
-│  ├─ page
-│  ├─ react-app-env.d.ts
-│  ├─ reportWebVitals.ts
-│  ├─ router
-│  ├─ scss
-│  ├─ setupTests.ts
-│  └─ store
-├─ tsconfig.json
-└─ yarn.lock
 
-```
 ```
 planq_frontend
 ├─ .gitignore
