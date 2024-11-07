@@ -1,0 +1,97 @@
+// src/scss/sidebar.scss
+
+._sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #f0f2f5; // 배경색
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+
+  ._sidebar__profile {
+    position: relative;
+    width : 150px;
+    height : 88px;
+    display: flex;
+    background-color: #6673FF;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;  // 이미지와 텍스트 사이 간격 조절
+    margin-bottom: 20px;
+    border-radius: 8px;
+    // overflow: hidden;
+    padding-left: 100px;
+
+    &-img {
+      position: absolute;
+      top: 50%;  // 세로 중앙 정렬
+      left: 16px;  // 왼쪽에서 일정 거리 떨어진 위치
+      transform: translateY(-50%);  // 세로 중앙을 정확하게 맞추기 위해 사용
+      width: 48px;
+      height:48px;
+      border-radius: 50%;
+      border: 2px solid #FFFFFF;  // 흰색 테두리 추가
+      object-fit: cover;
+    }
+
+    &__user-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color : #FFFFFF;
+
+      &-name {
+        //margin-left: 80px;
+        font-weight: bold;
+        font-size: 16px;
+        color: #FFFFFF;
+      }
+
+      &-streak {
+        //margin-left: 80px;
+        font-size: 14px;
+        color: #FFFFFF;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+      margin-bottom: 10px;
+
+      &:hover {
+        background-color: #e0e3ea;
+      }
+
+      &.active {
+        background-color: #d0d3dc;
+        color: #2a66f5;
+      }
+
+      &-icon {
+        margin-right: 8px;
+        font-size: 18px;
+      }
+
+      &-text {
+        flex-grow: 1;
+      }
+    }
+  }
+}

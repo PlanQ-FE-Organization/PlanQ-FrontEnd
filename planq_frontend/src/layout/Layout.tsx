@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Sidebar from '../components/sidebar/Sidebar'; // Sidebar 컴포넌트 import
-// import './Layout.css';
+import Sidebar from './sidebar/Sidebar'; // Sidebar 컴포넌트 import
+import '../styles/layout/layout.scss'; // SCSS 파일 경로에 맞게 수정
 
 const Layout: React.FC = () => {
     return (
