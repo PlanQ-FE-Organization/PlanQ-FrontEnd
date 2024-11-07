@@ -6,6 +6,7 @@ import {ReactComponent as SidebarAchievementDashboard } from "../../assetss/side
 import {ReactComponent as SidebarCollectionAchievement } from "../../assetss/sidebar/SidebarCollectionAchievement.svg"
 import {ReactComponent as SidebarCollectionQuiz } from "../../assetss/sidebar/SidebarCollectionQuiz.svg"
 import {ReactComponent as SidebarSolveQuiz } from "../../assetss/sidebar/SidebarSolveQuiz.svg"
+import Header from '../header/Header'; // 헤더 컴포넌트 import
 
 
 interface SidebarProps {
@@ -27,6 +28,7 @@ const Sidebar: React.FC<SidebarProps> = ({ userName, profileImg, streakDays }) =
 
     return (
       <aside className="_sidebar">
+          <Header/>
         <div className="_sidebar__profile">
           <img
             src={profileImg}
@@ -50,8 +52,8 @@ const Sidebar: React.FC<SidebarProps> = ({ userName, profileImg, streakDays }) =
               to={item.path}
               className={`_sidebar__menu-item ${location.pathname === item.path ? "active" : ""}`}
             >
-              <span className="_sidebar__menu-icon"> {item.icon} </span>
-              <span className="_sidebar__menu-text"> {item.name} </span>
+              <span className="_sidebar__menu-item-icon"> {item.icon} </span>
+              <span className="_sidebar__menu-item-text"> {item.name} </span>
             </Link>
           ))}
         </nav>
