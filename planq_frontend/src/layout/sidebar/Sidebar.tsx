@@ -1,6 +1,12 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../../styles/layout/_sidebar.scss'; // SCSS 파일 경로에 맞게 수정
+import {ReactComponent as SidebarCalendar } from "../../assetss/sidebar/SidebarCalendar.svg"
+import {ReactComponent as SidebarAchievementDashboard } from "../../assetss/sidebar/SidebarAchievementDashboard.svg"
+import {ReactComponent as SidebarCollectionAchievement } from "../../assetss/sidebar/SidebarCollectionAchievement.svg"
+import {ReactComponent as SidebarCollectionQuiz } from "../../assetss/sidebar/SidebarCollectionQuiz.svg"
+import {ReactComponent as SidebarSolveQuiz } from "../../assetss/sidebar/SidebarSolveQuiz.svg"
+
 
 interface SidebarProps {
     userName: string;
@@ -12,11 +18,11 @@ const Sidebar: React.FC<SidebarProps> = ({ userName, profileImg, streakDays }) =
     const location = useLocation();
 
     const menuItems = [
-        { name: '캘린더', icon: '📅', path: '/calendar' },
-        { name: '성과 대시보드', icon: '📊', path: '/dashboard' },
-        { name: '퀴즈 풀기', icon: '📝', path: '/solve-quiz' },
-        { name: '퀴즈 모아보기', icon: '📚', path: '/quiz-collection' },
-        { name: '성과 모아보기', icon: ' ',  path : '/achievement-collection'}
+        { name: '캘린더', icon: <SidebarCalendar/>, path: '/calendar' },
+        { name: '성과 대시보드', icon: <SidebarAchievementDashboard/>, path: '/dashboard' },
+        { name: '퀴즈 풀기', icon: <SidebarSolveQuiz/>, path: '/solve-quiz' },
+        { name: '퀴즈 모아보기', icon: <SidebarCollectionQuiz/>, path: '/quiz-collection' },
+        { name: '성과 모아보기', icon: <SidebarCollectionAchievement/>,  path : '/achievement-collection'}
     ];
 
     return (
