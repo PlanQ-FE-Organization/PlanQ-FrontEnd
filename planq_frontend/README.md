@@ -44,3 +44,89 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+```
+planq_frontend
+├─ .gitignore
+├─ eslint.config.mjs
+├─ package-lock.json
+├─ package.json
+├─ public
+│  ├─ favicon.ico
+│  ├─ index.html
+│  ├─ logo192.png
+│  ├─ logo512.png
+│  ├─ manifest.json
+│  └─ robots.txt
+├─ README.md
+├─ src
+│  ├─ api
+│  ├─ App.css
+│  ├─ App.test.tsx
+│  ├─ App.tsx
+│  ├─ assetss
+│  ├─ components
+│  │  └─ Loading.tsx
+│  ├─ index.css
+│  ├─ index.tsx
+│  ├─ logo.svg
+│  ├─ page
+│  ├─ react-app-env.d.ts
+│  ├─ reportWebVitals.ts
+│  ├─ router
+│  ├─ scss
+│  ├─ setupTests.ts
+│  └─ store
+├─ tsconfig.json
+└─ yarn.lock
+
+```
+```
+planq_frontend
+├─ .gitignore
+├─ eslint.config.mjs
+├─ package-lock.json
+├─ package.json
+├─ public
+│  ├─ favicon.ico
+│  ├─ index.html
+│  ├─ logo192.png
+│  ├─ logo512.png
+│  ├─ manifest.json
+│  └─ robots.txt
+├─ README.md
+├─ src
+│  ├─ api
+│  ├─ App.css
+│  ├─ App.test.tsx
+│  ├─ App.tsx
+│  ├─ assetss
+│  ├─ components
+│  │  ├─ Loading.tsx
+│  │  └─ sidebar
+│  │     └─ Sidebar.tsx
+│  ├─ index.css
+│  ├─ index.tsx
+│  ├─ logo.svg
+│  ├─ page
+│  │  ├─ achievement_collection
+│  │  │  └─ AchievementCollection.tsx
+│  │  ├─ calendar
+│  │  │  └─ Calendar.tsx
+│  │  ├─ dashboard
+│  │  │  └─ Dashboard.tsx
+│  │  ├─ quizresult
+│  │  │  └─ QuizResult.tsx
+│  │  └─ solvequiz
+│  │     └─ SolveQuiz.tsx
+│  ├─ react-app-env.d.ts
+│  ├─ reportWebVitals.ts
+│  ├─ router
+│  │  └─ router.js
+│  ├─ scss
+│  ├─ setupTests.ts
+│  └─ store
+├─ tsconfig.json
+└─ yarn.lock
+
+```
