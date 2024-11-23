@@ -18,12 +18,20 @@
     width: 100%;
 
     .header-section-month-navigation-month-year {
+      display: flex;
+      align-items: center;
       font-size: 24px;
       font-weight: bold;
       color: #6673FF;
+      align-items: center;
+      gap: 10px;
     }
 
     .header-section-month-navigation-nav-buttons {
+      display : flex;
+      align-items: center;
+      gap: 5px;
+
       .header-section-month-navigation-nav-buttons-button {
         background: none;
         border: none;
@@ -50,7 +58,7 @@
         font-size: 14px;
         cursor: pointer;
 
-        .selected {
+        .header-section-month-navigation-filter-buttons-selected {
           background: #6673FF;
           color: #fff;
         }
@@ -63,7 +71,7 @@
     }
   }
 
-  .weekdays {
+  .header-section-weekdays {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -73,7 +81,7 @@
     border-radius: 40px;
     padding: 16px 0px;
 
-    .weekday {
+    .header-section-weekdays-weekday {
       flex: 1;
       text-align: center;
       color: #6673FF;
