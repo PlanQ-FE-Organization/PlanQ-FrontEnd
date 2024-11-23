@@ -4,6 +4,9 @@
   grid-gap: 10px;
   position: relative;
   grid-auto-rows: 100px; // 세로 크기 자동 조정
+  width: 100%;
+  // box-sizing: border-box;
+  flex-grow: 1;
 
   .calendar-cell {
     width: 100px; // 원하는 크기에 맞게 조정
