@@ -1,8 +1,7 @@
 import React from 'react';
 import './HeaderSection.scss';
-import CalendarBackward from "../../assetss/calendar/CalendarBackward.svg"
-import CalendarFrontward from "../../assetss/calendar/CalendarFrontward.svg"
-
+import CalendarBackward from "../../../assetss/calendar/CalendarBackward.svg"
+import CalendarFrontward from "../../../assetss/calendar/CalendarFrontward.svg"
 
 const HeaderSection: React.FC = () => {
     return (
