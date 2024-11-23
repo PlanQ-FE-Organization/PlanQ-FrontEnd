@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
+import HeaderSection from "./HeaderSection";
+import styles from './Calendar.module.scss';
 
-const Calendar = () => {
-    return (
-        <div>
-            달력
-        </div>
-    );
-};
+class Calendar extends Component {
+    render() {
+        return (
+            <div className={styles.calendarContainer}>
+                <HeaderSection />
+            </div>
+        );
+    }
+}
 
 export default Calendar;
