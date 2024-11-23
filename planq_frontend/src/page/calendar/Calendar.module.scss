@@ -1,8 +1,27 @@
-.calendar-container {
+.calendarContainer {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   padding: 20px;
+}
+
+.calendarWrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* 부모 컨테이너 크기에 맞게 */
+}
+
+.calendarWrapper > div {
+  transition: transform 0.3s ease-in-out;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+}
+
+.fadeOut {
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
 }
 
