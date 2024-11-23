@@ -42,14 +42,14 @@ const CalendarGrid: React.FC<CalendarGridProps> = ({ year, month }) => {
                 return (
                     <div
                         key={index}
-                        className={`calendar-cell ${day === null ? "not-current-month" : "current-month"}`}
+                        className={`calendar-grid-calendar-cell ${day === null ? "calendar-grid-calendar-cell-not-current-month" : "current-month"}`}
                     >
-                        <span className="day-number">{day}</span>
-                        <div className="event-container">
+                        <span className="calendar-grid-calendar-cell-day-number">{day}</span>
+                        <div className="calendar-grid-calendar-cell-event-container">
                             {dayEvents.map((event, idx) => (
                                 <div
                                     key={idx}
-                                    className="event"
+                                    className="calendar-grid-calendar-cell-event-container-event"
                                     style={{ backgroundColor: event.color }}
                                 >
                                     {event.title}

@@ -5,35 +5,40 @@
   position: relative;
   grid-auto-rows: 100px; // 세로 크기 자동 조정
   width: 100%;
-  // box-sizing: border-box;
+  margin-top : 40px;
   flex-grow: 1;
 
-  .calendar-cell {
-    width: 100px; // 원하는 크기에 맞게 조정
-    height: 80px; // 원하는 크기에 맞게 조정
+  .calendar-grid-calendar-cell {
+    width: 100%; // 원하는 크기에 맞게 조정
+    height: 100%; // 원하는 크기에 맞게 조정
     border-radius: 8px; // 둥근 모서리 추가
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: start;
     padding: 8px; // 내부 여백
 
-    &.not-current-month {
+    .calendar-grid-calendar-cell-not-current-month {
       color: #c0c0c0;
       background-color: #f7f7f7;
     }
 
-    .day-number {
+    .calendar-grid-calendar-cell-current-month {
+      color : #333;  /*텍스트 색상*/
+      background-color: #ffffff;
+    }
+
+    .calendar-grid-calendar-cell-day-number {
       font-size: 14px;
       font-weight: bold;
       margin-bottom: 5px;
     }
 
-    .event-container {
+    .calendar-grid-calendar-cell-event-container {
       display: flex;
       flex-direction: column;
       gap: 4px;
       margin-top: 4px;
 
-      .event {
+      .calendar-grid-calendar-cell-event-container-event {
         font-size: 12px; // 글씨 크기 줄이기
         margin: 2px 0; // 일정 간 간격 조정
         border-radius: 4px; // 일정 배경 둥글게
